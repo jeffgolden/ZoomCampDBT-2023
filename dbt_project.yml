@@ -25,7 +25,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-  is_test_run: True
+  is_test_run: False
   payment_type_values: [1,2,3,4,5,6]
 
 # Configuring models
