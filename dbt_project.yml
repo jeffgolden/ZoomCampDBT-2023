@@ -25,7 +25,7 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-  is_test_run: False
+  is_test_run: True
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -42,4 +42,3 @@ seeds:
     taxi_zone_lookup:
       -column_types:
         locationid: numeric
-        
