@@ -26,7 +26,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 vars:
   is_test_run: False
-  
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -36,3 +36,10 @@ vars:
 models:
   taxi_rides_ny:
     # Applies to all files under models/example/
+
+seeds:
+  taxi_rides_ny:
+    taxi_zone_lookup:
+      -column_types:
+        locationid: numeric
+        
